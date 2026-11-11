@@ -1,0 +1,2514 @@
+{
+  "format": 1,
+  "_comment": "Auto Decorator presets. See README.md for the schema. Object IDs are GD 2.2 object IDs; any ID that is missing or is not a non-solid decoration in your game is skipped at runtime.",
+  "presets": [
+    {
+      "id": "nightmare",
+      "name": "Nightmare",
+      "description": "Blood-red thorns, rusted chains and ember glow in a black void.",
+      "seed": 1101,
+      "palette": {
+        "background": "#14060B",
+        "blocks": "#2A0A12",
+        "outline": "#FF2B3A",
+        "accent": "#8C1020",
+        "glow": "#FF5A4D"
+      },
+      "preview": [
+        126,
+        498,
+        1886,
+        1596
+      ],
+      "structure": {
+        "id": 3092,
+        "color": "blocks",
+        "z": -3,
+        "zOrder": -6,
+        "supportDensity": 0.8,
+        "skylineDensity": 0.55,
+        "width": [
+          2,
+          4
+        ],
+        "height": [
+          3,
+          10
+        ],
+        "gap": [
+          1,
+          4
+        ]
+      },
+      "rules": [
+        {
+          "kind": "cap",
+          "name": "thorns",
+          "density": 0.3,
+          "z": 3,
+          "zOrder": 2,
+          "objects": [
+            {
+              "id": 126,
+              "color": "outline",
+              "weight": 3,
+              "scale": [
+                0.8,
+                1.1
+              ]
+            },
+            {
+              "id": 127,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            {
+              "id": 125,
+              "color": "outline",
+              "scale": [
+                0.7,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "hang",
+          "name": "chains",
+          "density": 0.16,
+          "z": 1,
+          "zOrder": 0,
+          "length": [
+            2,
+            5
+          ],
+          "objects": [
+            {
+              "id": 498,
+              "color": "accent"
+            }
+          ]
+        },
+        {
+          "kind": "edge",
+          "name": "ember halo",
+          "density": 0.16,
+          "z": 3,
+          "zOrder": 4,
+          "objects": [
+            {
+              "id": 1887,
+              "color": "glow",
+              "weight": 3,
+              "scale": [
+                0.6,
+                1.0
+              ]
+            },
+            {
+              "id": 1764,
+              "color": "accent",
+              "weight": 2,
+              "scale": [
+                0.4,
+                0.8
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "glow",
+          "name": "hazard glow",
+          "density": 0.6,
+          "z": 1,
+          "zOrder": 0,
+          "objects": [
+            {
+              "id": 1886,
+              "color": "glow",
+              "scale": [
+                0.7,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "scatter",
+          "name": "ash",
+          "density": 0.06,
+          "z": -1,
+          "zOrder": 0,
+          "radius": 4,
+          "objects": [
+            {
+              "id": 1764,
+              "color": "glow",
+              "weight": 3,
+              "scale": [
+                0.3,
+                0.6
+              ]
+            },
+            {
+              "id": 1765,
+              "color": "accent",
+              "scale": [
+                0.3,
+                0.6
+              ],
+              "rot": [
+                0,
+                90
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "backdrop",
+          "name": "ghosts",
+          "density": 0.1,
+          "z": -3,
+          "zOrder": -9,
+          "stride": [
+            14,
+            10
+          ],
+          "objects": [
+            {
+              "id": 130,
+              "color": "accent",
+              "weight": 3,
+              "scale": [
+                1.2,
+                1.8
+              ]
+            },
+            {
+              "id": 3637,
+              "color": "glow",
+              "scale": [
+                1.5,
+                2.5
+              ]
+            }
+          ]
+        }
+      ],
+      "rhythm": {
+        "pulseEveryBeats": 2,
+        "fadeIn": 0,
+        "hold": 0.02,
+        "fadeOut": 0.25,
+        "brighten": 0.4,
+        "marker": {
+          "id": 1764,
+          "color": "glow",
+          "everyBeats": 2,
+          "row": 0,
+          "scale": 0.6,
+          "z": 3
+        }
+      }
+    },
+    {
+      "id": "candy",
+      "name": "Candy",
+      "description": "Sugary pinks and mint with flowers, stars and fluffy clouds.",
+      "seed": 1102,
+      "palette": {
+        "background": "#FFD9EC",
+        "blocks": "#FF8CC6",
+        "outline": "#FFFFFF",
+        "accent": "#7FE5D6",
+        "glow": "#FFF2A8"
+      },
+      "preview": [
+        939,
+        54,
+        3625,
+        936
+      ],
+      "structure": {
+        "id": 3092,
+        "color": "blocks",
+        "z": -3,
+        "zOrder": -6,
+        "supportDensity": 0.8,
+        "skylineDensity": 0.6,
+        "width": [
+          2,
+          3
+        ],
+        "height": [
+          3,
+          8
+        ],
+        "gap": [
+          1,
+          4
+        ]
+      },
+      "rules": [
+        {
+          "kind": "cap",
+          "name": "flowers",
+          "density": 0.3,
+          "z": 3,
+          "zOrder": 2,
+          "objects": [
+            {
+              "id": 939,
+              "color": "accent",
+              "weight": 2,
+              "scale": [
+                0.8,
+                1.1
+              ]
+            },
+            {
+              "id": 406,
+              "color": "outline",
+              "weight": 2
+            },
+            {
+              "id": 407,
+              "color": "outline"
+            }
+          ]
+        },
+        {
+          "kind": "edge",
+          "name": "sprinkles",
+          "density": 0.18,
+          "z": 3,
+          "zOrder": 4,
+          "objects": [
+            {
+              "id": 3621,
+              "color": "accent",
+              "weight": 2,
+              "scale": [
+                0.3,
+                0.5
+              ]
+            },
+            {
+              "id": 3625,
+              "color": "glow",
+              "scale": [
+                0.4,
+                0.7
+              ],
+              "rot": [
+                -20,
+                20
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "hang",
+          "name": "licorice",
+          "density": 0.1,
+          "z": 1,
+          "zOrder": 0,
+          "length": [
+            1,
+            3
+          ],
+          "objects": [
+            {
+              "id": 498,
+              "color": "outline"
+            }
+          ]
+        },
+        {
+          "kind": "scatter",
+          "name": "confetti",
+          "density": 0.08,
+          "z": -1,
+          "zOrder": 0,
+          "radius": 5,
+          "objects": [
+            {
+              "id": 54,
+              "color": "glow",
+              "weight": 2,
+              "scale": [
+                0.4,
+                0.7
+              ]
+            },
+            {
+              "id": 52,
+              "color": "accent",
+              "scale": [
+                0.4,
+                0.7
+              ]
+            },
+            {
+              "id": 53,
+              "color": "outline",
+              "scale": [
+                0.4,
+                0.7
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "backdrop",
+          "name": "clouds",
+          "density": 0.16,
+          "z": -3,
+          "zOrder": -9,
+          "stride": [
+            10,
+            8
+          ],
+          "objects": [
+            {
+              "id": 936,
+              "color": "outline",
+              "weight": 3,
+              "scale": [
+                1.0,
+                1.5
+              ]
+            },
+            {
+              "id": 937,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                1.0,
+                1.4
+              ]
+            },
+            {
+              "id": 938,
+              "color": "outline",
+              "weight": 2
+            }
+          ]
+        }
+      ],
+      "rhythm": {
+        "pulseEveryBeats": 1,
+        "fadeIn": 0,
+        "hold": 0.03,
+        "fadeOut": 0.2,
+        "brighten": 0.4,
+        "marker": {
+          "id": 52,
+          "color": "accent",
+          "everyBeats": 1,
+          "row": 0,
+          "scale": 0.5,
+          "z": 3
+        }
+      }
+    },
+    {
+      "id": "frost",
+      "name": "Frost",
+      "description": "Icy blues with frozen spikes, icicles and drifting snow.",
+      "seed": 1103,
+      "palette": {
+        "background": "#0B2540",
+        "blocks": "#1B4D7A",
+        "outline": "#D6F4FF",
+        "accent": "#7CC8F5",
+        "glow": "#E8FBFF"
+      },
+      "preview": [
+        20,
+        3086,
+        54,
+        129
+      ],
+      "structure": {
+        "id": 3092,
+        "color": "blocks",
+        "z": -3,
+        "zOrder": -6,
+        "supportDensity": 0.75,
+        "skylineDensity": 0.55,
+        "width": [
+          2,
+          4
+        ],
+        "height": [
+          3,
+          9
+        ],
+        "gap": [
+          1,
+          4
+        ]
+      },
+      "rules": [
+        {
+          "kind": "cap",
+          "name": "frost spikes",
+          "density": 0.3,
+          "z": 3,
+          "zOrder": 2,
+          "objects": [
+            {
+              "id": 20,
+              "color": "outline",
+              "weight": 3,
+              "scale": [
+                0.8,
+                1.1
+              ]
+            },
+            {
+              "id": 21,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            {
+              "id": 19,
+              "color": "outline",
+              "scale": [
+                0.7,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "hang",
+          "name": "icicles",
+          "density": 0.22,
+          "z": 3,
+          "zOrder": 2,
+          "length": [
+            1,
+            2
+          ],
+          "objects": [
+            {
+              "id": 20,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                0.7,
+                1.0
+              ],
+              "rot": [
+                180,
+                180
+              ]
+            },
+            {
+              "id": 21,
+              "color": "outline",
+              "weight": 2,
+              "rot": [
+                180,
+                180
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "edge",
+          "name": "frost halo",
+          "density": 0.12,
+          "z": 3,
+          "zOrder": 4,
+          "objects": [
+            {
+              "id": 1887,
+              "color": "glow",
+              "weight": 2,
+              "scale": [
+                0.5,
+                0.9
+              ]
+            },
+            {
+              "id": 3080,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                0.4,
+                0.7
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "scatter",
+          "name": "snow",
+          "density": 0.12,
+          "z": -1,
+          "zOrder": 0,
+          "radius": 6,
+          "objects": [
+            {
+              "id": 1764,
+              "color": "glow",
+              "weight": 4,
+              "scale": [
+                0.3,
+                0.5
+              ]
+            },
+            {
+              "id": 3621,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                0.15,
+                0.3
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "backdrop",
+          "name": "ice crystals",
+          "density": 0.1,
+          "z": -3,
+          "zOrder": -9,
+          "stride": [
+            11,
+            9
+          ],
+          "objects": [
+            {
+              "id": 3086,
+              "color": "accent",
+              "weight": 2,
+              "scale": [
+                1.0,
+                1.6
+              ]
+            },
+            {
+              "id": 3088,
+              "color": "accent",
+              "weight": 2,
+              "scale": [
+                1.0,
+                1.6
+              ]
+            },
+            {
+              "id": 129,
+              "color": "blocks",
+              "weight": 2,
+              "scale": [
+                1.2,
+                1.8
+              ]
+            }
+          ]
+        }
+      ],
+      "rhythm": {
+        "pulseEveryBeats": 2,
+        "fadeIn": 0,
+        "hold": 0.03,
+        "fadeOut": 0.3,
+        "brighten": 0.6,
+        "marker": {
+          "id": 3625,
+          "color": "glow",
+          "everyBeats": 2,
+          "row": 0,
+          "scale": 0.4,
+          "z": 3
+        }
+      }
+    },
+    {
+      "id": "stone",
+      "name": "Stone",
+      "description": "Weathered grey masonry with moss, roots and old gears.",
+      "seed": 1104,
+      "palette": {
+        "background": "#26272B",
+        "blocks": "#4B4D55",
+        "outline": "#A9ABB5",
+        "accent": "#7A6F5D",
+        "glow": "#D8C9A3"
+      },
+      "preview": [
+        113,
+        906,
+        85,
+        907
+      ],
+      "structure": {
+        "id": 3092,
+        "color": "blocks",
+        "z": -3,
+        "zOrder": -6,
+        "supportDensity": 0.9,
+        "skylineDensity": 0.7,
+        "width": [
+          2,
+          5
+        ],
+        "height": [
+          3,
+          11
+        ],
+        "gap": [
+          1,
+          4
+        ]
+      },
+      "rules": [
+        {
+          "kind": "cap",
+          "name": "moss",
+          "density": 0.35,
+          "z": 3,
+          "zOrder": 2,
+          "objects": [
+            {
+              "id": 406,
+              "color": "accent",
+              "weight": 3
+            },
+            {
+              "id": 407,
+              "color": "accent",
+              "weight": 2
+            },
+            {
+              "id": 408,
+              "color": "accent",
+              "weight": 2
+            },
+            {
+              "id": 906,
+              "color": "accent"
+            }
+          ]
+        },
+        {
+          "kind": "hang",
+          "name": "roots",
+          "density": 0.12,
+          "z": 1,
+          "zOrder": 0,
+          "length": [
+            2,
+            4
+          ],
+          "objects": [
+            {
+              "id": 498,
+              "color": "outline"
+            }
+          ]
+        },
+        {
+          "kind": "edge",
+          "name": "chipped bricks",
+          "density": 0.1,
+          "z": 3,
+          "zOrder": 3,
+          "objects": [
+            {
+              "id": 115,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                0.6,
+                1.0
+              ]
+            },
+            {
+              "id": 1764,
+              "color": "outline",
+              "scale": [
+                0.5,
+                0.9
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "scatter",
+          "name": "pebbles",
+          "density": 0.1,
+          "z": 1,
+          "zOrder": 0,
+          "radius": 3,
+          "objects": [
+            {
+              "id": 3095,
+              "color": "outline",
+              "weight": 3,
+              "scale": [
+                1.0,
+                2.0
+              ]
+            },
+            {
+              "id": 3094,
+              "color": "accent",
+              "weight": 2,
+              "scale": [
+                1.0,
+                1.6
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "backdrop",
+          "name": "old machinery",
+          "density": 0.1,
+          "z": -3,
+          "zOrder": -9,
+          "stride": [
+            12,
+            9
+          ],
+          "objects": [
+            {
+              "id": 85,
+              "color": "blocks",
+              "weight": 2,
+              "scale": [
+                1.5,
+                2.5
+              ]
+            },
+            {
+              "id": 86,
+              "color": "blocks",
+              "weight": 2,
+              "scale": [
+                1.5,
+                2.5
+              ]
+            },
+            {
+              "id": 678,
+              "color": "accent",
+              "scale": [
+                1.5,
+                2.0
+              ]
+            }
+          ]
+        }
+      ],
+      "rhythm": {
+        "pulseEveryBeats": 2,
+        "fadeIn": 0,
+        "hold": 0.03,
+        "fadeOut": 0.25,
+        "brighten": 0.5,
+        "marker": {
+          "id": 3093,
+          "color": "accent",
+          "everyBeats": 2,
+          "row": 0,
+          "scale": 0.7,
+          "z": 3
+        }
+      }
+    },
+    {
+      "id": "lagoon",
+      "name": "Lagoon",
+      "description": "A glowing blue sea of bubbles, swirls and swaying weed.",
+      "seed": 1105,
+      "palette": {
+        "background": "#05324A",
+        "blocks": "#0A5C7A",
+        "outline": "#3FE0D0",
+        "accent": "#FFB86B",
+        "glow": "#7DF9E7"
+      },
+      "preview": [
+        1058,
+        3621,
+        1886,
+        222
+      ],
+      "structure": {
+        "id": 3092,
+        "color": "blocks",
+        "z": -3,
+        "zOrder": -6,
+        "supportDensity": 0.8,
+        "skylineDensity": 0.6,
+        "width": [
+          2,
+          4
+        ],
+        "height": [
+          3,
+          9
+        ],
+        "gap": [
+          1,
+          4
+        ]
+      },
+      "rules": [
+        {
+          "kind": "cap",
+          "name": "seaweed",
+          "density": 0.3,
+          "z": 3,
+          "zOrder": 2,
+          "objects": [
+            {
+              "id": 940,
+              "color": "outline",
+              "weight": 3
+            },
+            {
+              "id": 941,
+              "color": "outline",
+              "weight": 2
+            },
+            {
+              "id": 942,
+              "color": "outline",
+              "weight": 2
+            },
+            {
+              "id": 939,
+              "color": "accent"
+            }
+          ]
+        },
+        {
+          "kind": "hang",
+          "name": "kelp",
+          "density": 0.12,
+          "z": 1,
+          "zOrder": 0,
+          "length": [
+            2,
+            5
+          ],
+          "objects": [
+            {
+              "id": 2251,
+              "color": "outline"
+            }
+          ]
+        },
+        {
+          "kind": "edge",
+          "name": "bubbles",
+          "density": 0.2,
+          "z": 3,
+          "zOrder": 4,
+          "objects": [
+            {
+              "id": 3622,
+              "color": "outline",
+              "weight": 3,
+              "scale": [
+                0.2,
+                0.5
+              ]
+            },
+            {
+              "id": 3621,
+              "color": "glow",
+              "weight": 2,
+              "scale": [
+                0.15,
+                0.3
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "scatter",
+          "name": "plankton",
+          "density": 0.1,
+          "z": -1,
+          "zOrder": 0,
+          "radius": 6,
+          "objects": [
+            {
+              "id": 1764,
+              "color": "glow",
+              "weight": 3,
+              "scale": [
+                0.3,
+                0.6
+              ]
+            },
+            {
+              "id": 1765,
+              "color": "accent",
+              "scale": [
+                0.3,
+                0.5
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "backdrop",
+          "name": "swirls",
+          "density": 0.14,
+          "z": -3,
+          "zOrder": -9,
+          "stride": [
+            10,
+            8
+          ],
+          "objects": [
+            {
+              "id": 1058,
+              "color": "glow",
+              "weight": 2,
+              "scale": [
+                1.2,
+                2.0
+              ]
+            },
+            {
+              "id": 1059,
+              "color": "glow",
+              "weight": 2,
+              "scale": [
+                1.2,
+                2.0
+              ]
+            },
+            {
+              "id": 222,
+              "color": "blocks",
+              "weight": 2,
+              "scale": [
+                1.2,
+                1.8
+              ]
+            },
+            {
+              "id": 223,
+              "color": "blocks",
+              "scale": [
+                1.2,
+                1.6
+              ]
+            }
+          ]
+        }
+      ],
+      "rhythm": {
+        "pulseEveryBeats": 1,
+        "fadeIn": 0,
+        "hold": 0.04,
+        "fadeOut": 0.3,
+        "brighten": 0.5,
+        "marker": {
+          "id": 3622,
+          "color": "outline",
+          "everyBeats": 1,
+          "row": 0,
+          "scale": 0.5,
+          "z": 3
+        }
+      }
+    },
+    {
+      "id": "neon-circuit",
+      "name": "Neon Circuit",
+      "description": "Cyan and magenta traces, equalizer bars and drifting data packets.",
+      "seed": 1106,
+      "palette": {
+        "background": "#07070F",
+        "blocks": "#12122A",
+        "outline": "#00F0FF",
+        "accent": "#FF2BD6",
+        "glow": "#7CFF4D"
+      },
+      "preview": [
+        450,
+        1011,
+        3082,
+        50
+      ],
+      "structure": {
+        "id": 3092,
+        "color": "blocks",
+        "z": -3,
+        "zOrder": -6,
+        "supportDensity": 0.8,
+        "skylineDensity": 0.6,
+        "width": [
+          2,
+          4
+        ],
+        "height": [
+          3,
+          10
+        ],
+        "gap": [
+          1,
+          4
+        ]
+      },
+      "rules": [
+        {
+          "kind": "edge",
+          "name": "neon trim",
+          "density": 0.3,
+          "z": 3,
+          "zOrder": 4,
+          "objects": [
+            {
+              "id": 1764,
+              "color": "outline",
+              "weight": 4,
+              "scale": [
+                0.4,
+                0.8
+              ]
+            },
+            {
+              "id": 3082,
+              "color": "accent",
+              "weight": 2,
+              "scale": [
+                0.3,
+                0.6
+              ]
+            },
+            {
+              "id": 1767,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                0.5,
+                0.9
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "cap",
+          "name": "equalizer",
+          "density": 0.18,
+          "z": 3,
+          "zOrder": 2,
+          "objects": [
+            {
+              "id": 451,
+              "color": "accent",
+              "weight": 2
+            },
+            {
+              "id": 452,
+              "color": "accent",
+              "weight": 2
+            }
+          ]
+        },
+        {
+          "kind": "glow",
+          "name": "hazard glow",
+          "density": 0.6,
+          "z": 1,
+          "zOrder": 0,
+          "objects": [
+            {
+              "id": 1887,
+              "color": "glow",
+              "scale": [
+                0.7,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "hang",
+          "name": "wires",
+          "density": 0.08,
+          "z": 1,
+          "zOrder": 0,
+          "length": [
+            1,
+            2
+          ],
+          "objects": [
+            {
+              "id": 3423,
+              "color": "outline"
+            }
+          ]
+        },
+        {
+          "kind": "scatter",
+          "name": "data packets",
+          "density": 0.14,
+          "z": -1,
+          "zOrder": 0,
+          "radius": 5,
+          "objects": [
+            {
+              "id": 1768,
+              "color": "accent",
+              "weight": 2,
+              "scale": [
+                0.4,
+                0.7
+              ]
+            },
+            {
+              "id": 1766,
+              "color": "glow",
+              "scale": [
+                0.4,
+                0.7
+              ]
+            },
+            {
+              "id": 1767,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                0.4,
+                0.7
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "backdrop",
+          "name": "grid towers",
+          "density": 0.12,
+          "z": -3,
+          "zOrder": -9,
+          "stride": [
+            11,
+            9
+          ],
+          "objects": [
+            {
+              "id": 3639,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                0.8,
+                1.6
+              ]
+            },
+            {
+              "id": 3636,
+              "color": "accent",
+              "scale": [
+                0.8,
+                1.6
+              ]
+            },
+            {
+              "id": 450,
+              "color": "accent",
+              "weight": 2,
+              "scale": [
+                1.0,
+                1.6
+              ]
+            }
+          ]
+        }
+      ],
+      "rhythm": {
+        "pulseEveryBeats": 1,
+        "fadeIn": 0,
+        "hold": 0.02,
+        "fadeOut": 0.18,
+        "brighten": 0.6,
+        "marker": {
+          "id": 1767,
+          "color": "glow",
+          "everyBeats": 1,
+          "row": 0,
+          "scale": 0.6,
+          "z": 3
+        }
+      }
+    },
+    {
+      "id": "retro",
+      "name": "Retro",
+      "description": "Arcade purple and gold: pixel flowers, stars and a big low sun.",
+      "seed": 1107,
+      "palette": {
+        "background": "#2B1B4A",
+        "blocks": "#5A3A8C",
+        "outline": "#FFD23F",
+        "accent": "#FF6B35",
+        "glow": "#4DE1FF"
+      },
+      "preview": [
+        54,
+        3627,
+        3628,
+        1768
+      ],
+      "structure": {
+        "id": 3092,
+        "color": "blocks",
+        "z": -3,
+        "zOrder": -6,
+        "supportDensity": 0.8,
+        "skylineDensity": 0.65,
+        "width": [
+          2,
+          3
+        ],
+        "height": [
+          3,
+          8
+        ],
+        "gap": [
+          1,
+          4
+        ]
+      },
+      "rules": [
+        {
+          "kind": "edge",
+          "name": "pixel edge",
+          "density": 0.25,
+          "z": 3,
+          "zOrder": 4,
+          "objects": [
+            {
+              "id": 3094,
+              "color": "outline",
+              "weight": 3,
+              "scale": [
+                1.0,
+                1.5
+              ]
+            },
+            {
+              "id": 3095,
+              "color": "accent",
+              "weight": 2,
+              "scale": [
+                1.0,
+                1.5
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "cap",
+          "name": "pixel flowers",
+          "density": 0.15,
+          "z": 3,
+          "zOrder": 2,
+          "objects": [
+            {
+              "id": 3476,
+              "color": "accent",
+              "weight": 3
+            },
+            {
+              "id": 3477,
+              "color": "accent"
+            }
+          ]
+        },
+        {
+          "kind": "hang",
+          "name": "pixel vines",
+          "density": 0.08,
+          "z": 1,
+          "zOrder": 0,
+          "length": [
+            2,
+            4
+          ],
+          "objects": [
+            {
+              "id": 3135,
+              "color": "accent"
+            }
+          ]
+        },
+        {
+          "kind": "scatter",
+          "name": "stars",
+          "density": 0.1,
+          "z": -1,
+          "zOrder": 0,
+          "radius": 6,
+          "objects": [
+            {
+              "id": 54,
+              "color": "glow",
+              "weight": 2,
+              "scale": [
+                0.4,
+                0.8
+              ]
+            },
+            {
+              "id": 3625,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                0.4,
+                0.7
+              ]
+            },
+            {
+              "id": 1765,
+              "color": "accent",
+              "scale": [
+                0.4,
+                0.7
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "backdrop",
+          "name": "sun and grid",
+          "density": 0.08,
+          "z": -3,
+          "zOrder": -9,
+          "stride": [
+            18,
+            10
+          ],
+          "objects": [
+            {
+              "id": 3637,
+              "color": "accent",
+              "scale": [
+                2.0,
+                3.0
+              ]
+            },
+            {
+              "id": 3639,
+              "color": "outline",
+              "scale": [
+                1.0,
+                1.8
+              ]
+            },
+            {
+              "id": 3627,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                0.8,
+                1.4
+              ]
+            }
+          ]
+        }
+      ],
+      "rhythm": {
+        "pulseEveryBeats": 1,
+        "fadeIn": 0,
+        "hold": 0.03,
+        "fadeOut": 0.2,
+        "brighten": 0.5,
+        "marker": {
+          "id": 3627,
+          "color": "glow",
+          "everyBeats": 1,
+          "row": 0,
+          "scale": 0.5,
+          "z": 3
+        }
+      }
+    },
+    {
+      "id": "sunset",
+      "name": "Sunset",
+      "description": "Warm magenta dusk: fireflies, drifting clouds and a huge low sun.",
+      "seed": 1108,
+      "palette": {
+        "background": "#3A1148",
+        "blocks": "#7A1F5C",
+        "outline": "#FFB347",
+        "accent": "#FF5E78",
+        "glow": "#FFD27F"
+      },
+      "preview": [
+        3637,
+        936,
+        54,
+        1887
+      ],
+      "structure": {
+        "id": 3092,
+        "color": "blocks",
+        "z": -3,
+        "zOrder": -6,
+        "supportDensity": 0.8,
+        "skylineDensity": 0.6,
+        "width": [
+          2,
+          4
+        ],
+        "height": [
+          3,
+          9
+        ],
+        "gap": [
+          1,
+          4
+        ]
+      },
+      "rules": [
+        {
+          "kind": "cap",
+          "name": "dry grass",
+          "density": 0.3,
+          "z": 3,
+          "zOrder": 2,
+          "objects": [
+            {
+              "id": 406,
+              "color": "outline",
+              "weight": 3
+            },
+            {
+              "id": 407,
+              "color": "outline",
+              "weight": 2
+            },
+            {
+              "id": 940,
+              "color": "accent"
+            }
+          ]
+        },
+        {
+          "kind": "edge",
+          "name": "warm glow",
+          "density": 0.15,
+          "z": 3,
+          "zOrder": 4,
+          "objects": [
+            {
+              "id": 1887,
+              "color": "glow",
+              "weight": 3,
+              "scale": [
+                0.5,
+                0.9
+              ]
+            },
+            {
+              "id": 1764,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                0.4,
+                0.7
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "hang",
+          "name": "bunting",
+          "density": 0.06,
+          "z": 1,
+          "zOrder": 0,
+          "length": [
+            1,
+            3
+          ],
+          "objects": [
+            {
+              "id": 498,
+              "color": "outline"
+            }
+          ]
+        },
+        {
+          "kind": "scatter",
+          "name": "fireflies",
+          "density": 0.1,
+          "z": -1,
+          "zOrder": 0,
+          "radius": 6,
+          "objects": [
+            {
+              "id": 1887,
+              "color": "glow",
+              "weight": 3,
+              "scale": [
+                0.3,
+                0.6
+              ]
+            },
+            {
+              "id": 1764,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                0.4,
+                0.7
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "backdrop",
+          "name": "sun and clouds",
+          "density": 0.14,
+          "z": -3,
+          "zOrder": -9,
+          "stride": [
+            10,
+            8
+          ],
+          "objects": [
+            {
+              "id": 3637,
+              "color": "glow",
+              "scale": [
+                2.5,
+                3.5
+              ]
+            },
+            {
+              "id": 936,
+              "color": "accent",
+              "weight": 3,
+              "scale": [
+                1.0,
+                1.6
+              ]
+            },
+            {
+              "id": 937,
+              "color": "accent",
+              "weight": 2,
+              "scale": [
+                1.0,
+                1.5
+              ]
+            },
+            {
+              "id": 938,
+              "color": "accent",
+              "weight": 2
+            }
+          ]
+        }
+      ],
+      "rhythm": {
+        "pulseEveryBeats": 2,
+        "fadeIn": 0,
+        "hold": 0.03,
+        "fadeOut": 0.3,
+        "brighten": 0.4,
+        "marker": {
+          "id": 1887,
+          "color": "glow",
+          "everyBeats": 2,
+          "row": 0,
+          "scale": 0.5,
+          "z": 3
+        }
+      }
+    },
+    {
+      "id": "forest",
+      "name": "Forest",
+      "description": "Deep greens with grass, bushes, hanging vines and fireflies.",
+      "seed": 1109,
+      "palette": {
+        "background": "#0C2417",
+        "blocks": "#1F4D2B",
+        "outline": "#8FD16B",
+        "accent": "#E3C46A",
+        "glow": "#C9FF8A"
+      },
+      "preview": [
+        406,
+        909,
+        3135,
+        939
+      ],
+      "structure": {
+        "id": 3092,
+        "color": "blocks",
+        "z": -3,
+        "zOrder": -6,
+        "supportDensity": 0.85,
+        "skylineDensity": 0.65,
+        "width": [
+          2,
+          4
+        ],
+        "height": [
+          3,
+          9
+        ],
+        "gap": [
+          1,
+          4
+        ]
+      },
+      "rules": [
+        {
+          "kind": "cap",
+          "name": "grass",
+          "density": 0.38,
+          "z": 3,
+          "zOrder": 2,
+          "objects": [
+            {
+              "id": 406,
+              "color": "outline",
+              "weight": 3
+            },
+            {
+              "id": 407,
+              "color": "outline",
+              "weight": 2
+            },
+            {
+              "id": 408,
+              "color": "outline",
+              "weight": 2
+            },
+            {
+              "id": 414,
+              "color": "outline"
+            },
+            {
+              "id": 939,
+              "color": "accent"
+            }
+          ]
+        },
+        {
+          "kind": "cap",
+          "name": "bushes",
+          "density": 0.12,
+          "z": 1,
+          "zOrder": 0,
+          "objects": [
+            {
+              "id": 909,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                0.9,
+                1.3
+              ]
+            },
+            {
+              "id": 910,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                0.9,
+                1.3
+              ]
+            },
+            {
+              "id": 1919,
+              "color": "blocks"
+            }
+          ]
+        },
+        {
+          "kind": "hang",
+          "name": "vines",
+          "density": 0.12,
+          "z": 1,
+          "zOrder": 0,
+          "length": [
+            2,
+            5
+          ],
+          "objects": [
+            {
+              "id": 3135,
+              "color": "outline"
+            },
+            {
+              "id": 3136,
+              "color": "outline"
+            },
+            {
+              "id": 3137,
+              "color": "outline"
+            }
+          ]
+        },
+        {
+          "kind": "scatter",
+          "name": "fireflies",
+          "density": 0.08,
+          "z": -1,
+          "zOrder": 0,
+          "radius": 5,
+          "objects": [
+            {
+              "id": 1887,
+              "color": "glow",
+              "weight": 3,
+              "scale": [
+                0.3,
+                0.6
+              ]
+            },
+            {
+              "id": 1764,
+              "color": "accent",
+              "weight": 2,
+              "scale": [
+                0.4,
+                0.7
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "backdrop",
+          "name": "canopy",
+          "density": 0.12,
+          "z": -3,
+          "zOrder": -9,
+          "stride": [
+            9,
+            7
+          ],
+          "objects": [
+            {
+              "id": 907,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                1.5,
+                2.5
+              ]
+            },
+            {
+              "id": 130,
+              "color": "blocks",
+              "weight": 2,
+              "scale": [
+                1.2,
+                1.8
+              ]
+            },
+            {
+              "id": 129,
+              "color": "blocks",
+              "scale": [
+                1.2,
+                1.6
+              ]
+            }
+          ]
+        }
+      ],
+      "rhythm": {
+        "pulseEveryBeats": 2,
+        "fadeIn": 0,
+        "hold": 0.03,
+        "fadeOut": 0.25,
+        "brighten": 0.5,
+        "marker": {
+          "id": 939,
+          "color": "accent",
+          "everyBeats": 2,
+          "row": 0,
+          "scale": 0.6,
+          "z": 3
+        }
+      }
+    },
+    {
+      "id": "cyber",
+      "name": "Cyber",
+      "description": "Cold blue steel with violet rings, antennas and cabling.",
+      "seed": 1110,
+      "palette": {
+        "background": "#060B1A",
+        "blocks": "#0F1F3D",
+        "outline": "#4D9BFF",
+        "accent": "#B26BFF",
+        "glow": "#00FFC6"
+      },
+      "preview": [
+        17,
+        3082,
+        3622,
+        1768
+      ],
+      "structure": {
+        "id": 3092,
+        "color": "blocks",
+        "z": -3,
+        "zOrder": -6,
+        "supportDensity": 0.8,
+        "skylineDensity": 0.6,
+        "width": [
+          2,
+          4
+        ],
+        "height": [
+          3,
+          11
+        ],
+        "gap": [
+          1,
+          4
+        ]
+      },
+      "rules": [
+        {
+          "kind": "edge",
+          "name": "circuit trim",
+          "density": 0.22,
+          "z": 3,
+          "zOrder": 4,
+          "objects": [
+            {
+              "id": 3082,
+              "color": "outline",
+              "weight": 3,
+              "scale": [
+                0.3,
+                0.6
+              ]
+            },
+            {
+              "id": 1767,
+              "color": "accent",
+              "weight": 2,
+              "scale": [
+                0.5,
+                0.9
+              ]
+            },
+            {
+              "id": 1764,
+              "color": "glow",
+              "weight": 3,
+              "scale": [
+                0.4,
+                0.8
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "cap",
+          "name": "antennas",
+          "density": 0.1,
+          "z": 3,
+          "zOrder": 2,
+          "objects": [
+            {
+              "id": 17,
+              "color": "outline",
+              "weight": 3
+            },
+            {
+              "id": 16,
+              "color": "outline"
+            },
+            {
+              "id": 53,
+              "color": "glow",
+              "scale": [
+                0.4,
+                0.6
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "glow",
+          "name": "hazard glow",
+          "density": 0.6,
+          "z": 1,
+          "zOrder": 0,
+          "objects": [
+            {
+              "id": 1887,
+              "color": "accent",
+              "scale": [
+                0.7,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "hang",
+          "name": "cables",
+          "density": 0.08,
+          "z": 1,
+          "zOrder": 0,
+          "length": [
+            2,
+            6
+          ],
+          "objects": [
+            {
+              "id": 498,
+              "color": "accent"
+            }
+          ]
+        },
+        {
+          "kind": "scatter",
+          "name": "packets",
+          "density": 0.12,
+          "z": -1,
+          "zOrder": 0,
+          "radius": 5,
+          "objects": [
+            {
+              "id": 1768,
+              "color": "accent",
+              "weight": 2,
+              "scale": [
+                0.4,
+                0.7
+              ]
+            },
+            {
+              "id": 1766,
+              "color": "glow",
+              "scale": [
+                0.4,
+                0.7
+              ]
+            },
+            {
+              "id": 1767,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                0.4,
+                0.7
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "backdrop",
+          "name": "rings and towers",
+          "density": 0.1,
+          "z": -3,
+          "zOrder": -9,
+          "stride": [
+            14,
+            10
+          ],
+          "objects": [
+            {
+              "id": 3622,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                3.0,
+                5.0
+              ]
+            },
+            {
+              "id": 3636,
+              "color": "accent",
+              "scale": [
+                3.0,
+                5.0
+              ]
+            },
+            {
+              "id": 3639,
+              "color": "glow",
+              "scale": [
+                1.0,
+                2.0
+              ]
+            }
+          ]
+        }
+      ],
+      "rhythm": {
+        "pulseEveryBeats": 1,
+        "fadeIn": 0,
+        "hold": 0.02,
+        "fadeOut": 0.2,
+        "brighten": 0.6,
+        "marker": {
+          "id": 3082,
+          "color": "outline",
+          "everyBeats": 1,
+          "row": 0,
+          "scale": 0.5,
+          "z": 3
+        }
+      }
+    },
+    {
+      "id": "aurora",
+      "name": "Aurora",
+      "description": "Polar-night teal and violet with shimmering ribbons and stardust.",
+      "seed": 1111,
+      "palette": {
+        "background": "#061428",
+        "blocks": "#10344F",
+        "outline": "#6BFFB8",
+        "accent": "#9B7BFF",
+        "glow": "#5CF2FF"
+      },
+      "preview": [
+        1058,
+        54,
+        3625,
+        130
+      ],
+      "structure": {
+        "id": 3092,
+        "color": "blocks",
+        "z": -3,
+        "zOrder": -6,
+        "supportDensity": 0.75,
+        "skylineDensity": 0.55,
+        "width": [
+          2,
+          4
+        ],
+        "height": [
+          3,
+          9
+        ],
+        "gap": [
+          1,
+          4
+        ]
+      },
+      "rules": [
+        {
+          "kind": "edge",
+          "name": "shimmer",
+          "density": 0.14,
+          "z": 3,
+          "zOrder": 4,
+          "objects": [
+            {
+              "id": 1887,
+              "color": "glow",
+              "weight": 3,
+              "scale": [
+                0.5,
+                0.9
+              ]
+            },
+            {
+              "id": 3621,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                0.2,
+                0.35
+              ]
+            },
+            {
+              "id": 54,
+              "color": "accent",
+              "scale": [
+                0.3,
+                0.5
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "cap",
+          "name": "tufts",
+          "density": 0.16,
+          "z": 3,
+          "zOrder": 2,
+          "objects": [
+            {
+              "id": 940,
+              "color": "outline",
+              "weight": 2
+            },
+            {
+              "id": 941,
+              "color": "accent"
+            }
+          ]
+        },
+        {
+          "kind": "hang",
+          "name": "light threads",
+          "density": 0.06,
+          "z": 1,
+          "zOrder": 0,
+          "length": [
+            2,
+            4
+          ],
+          "objects": [
+            {
+              "id": 498,
+              "color": "glow"
+            }
+          ]
+        },
+        {
+          "kind": "scatter",
+          "name": "stardust",
+          "density": 0.12,
+          "z": -1,
+          "zOrder": 0,
+          "radius": 6,
+          "objects": [
+            {
+              "id": 54,
+              "color": "glow",
+              "weight": 3,
+              "scale": [
+                0.2,
+                0.4
+              ]
+            },
+            {
+              "id": 3625,
+              "color": "accent",
+              "scale": [
+                0.2,
+                0.4
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "backdrop",
+          "name": "ribbons",
+          "density": 0.1,
+          "z": -3,
+          "zOrder": -9,
+          "stride": [
+            12,
+            10
+          ],
+          "objects": [
+            {
+              "id": 1058,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                2.0,
+                3.0
+              ]
+            },
+            {
+              "id": 1059,
+              "color": "outline",
+              "weight": 2,
+              "scale": [
+                2.0,
+                3.0
+              ]
+            },
+            {
+              "id": 1060,
+              "color": "accent",
+              "scale": [
+                2.0,
+                3.0
+              ]
+            },
+            {
+              "id": 130,
+              "color": "accent",
+              "scale": [
+                1.4,
+                2.0
+              ]
+            },
+            {
+              "id": 3637,
+              "color": "glow",
+              "scale": [
+                3.0,
+                5.0
+              ]
+            }
+          ]
+        }
+      ],
+      "rhythm": {
+        "pulseEveryBeats": 2,
+        "fadeIn": 0,
+        "hold": 0.04,
+        "fadeOut": 0.35,
+        "brighten": 0.5,
+        "marker": {
+          "id": 54,
+          "color": "glow",
+          "everyBeats": 2,
+          "row": 0,
+          "scale": 0.4,
+          "z": 3
+        }
+      }
+    },
+    {
+      "id": "ember",
+      "name": "Ember",
+      "description": "Charred black-brown rock lit by flames, sparks and drifting ash.",
+      "seed": 1112,
+      "palette": {
+        "background": "#1A0A04",
+        "blocks": "#3A1608",
+        "outline": "#FF9A3C",
+        "accent": "#FFD166",
+        "glow": "#FF6A2A"
+      },
+      "preview": [
+        2034,
+        1764,
+        1887,
+        130
+      ],
+      "structure": {
+        "id": 3092,
+        "color": "blocks",
+        "z": -3,
+        "zOrder": -6,
+        "supportDensity": 0.85,
+        "skylineDensity": 0.6,
+        "width": [
+          2,
+          4
+        ],
+        "height": [
+          3,
+          10
+        ],
+        "gap": [
+          1,
+          4
+        ]
+      },
+      "rules": [
+        {
+          "kind": "cap",
+          "name": "flames",
+          "density": 0.2,
+          "z": 3,
+          "zOrder": 2,
+          "objects": [
+            {
+              "id": 2034,
+              "color": "glow",
+              "weight": 2,
+              "scale": [
+                0.8,
+                1.2
+              ]
+            },
+            {
+              "id": 2865,
+              "color": "glow",
+              "scale": [
+                0.6,
+                1.0
+              ]
+            },
+            {
+              "id": 54,
+              "color": "accent",
+              "scale": [
+                0.5,
+                0.8
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "edge",
+          "name": "sparks",
+          "density": 0.2,
+          "z": 3,
+          "zOrder": 4,
+          "objects": [
+            {
+              "id": 1764,
+              "color": "accent",
+              "weight": 3,
+              "scale": [
+                0.3,
+                0.6
+              ]
+            },
+            {
+              "id": 1765,
+              "color": "glow",
+              "scale": [
+                0.3,
+                0.5
+              ]
+            },
+            {
+              "id": 1887,
+              "color": "glow",
+              "scale": [
+                0.5,
+                0.9
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "glow",
+          "name": "hazard glow",
+          "density": 0.6,
+          "z": 1,
+          "zOrder": 0,
+          "objects": [
+            {
+              "id": 1886,
+              "color": "glow",
+              "scale": [
+                0.7,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "hang",
+          "name": "chains",
+          "density": 0.1,
+          "z": 1,
+          "zOrder": 0,
+          "length": [
+            2,
+            4
+          ],
+          "objects": [
+            {
+              "id": 498,
+              "color": "outline"
+            }
+          ]
+        },
+        {
+          "kind": "scatter",
+          "name": "embers",
+          "density": 0.14,
+          "z": -1,
+          "zOrder": 0,
+          "radius": 5,
+          "objects": [
+            {
+              "id": 1764,
+              "color": "glow",
+              "weight": 3,
+              "scale": [
+                0.3,
+                0.6
+              ]
+            },
+            {
+              "id": 3625,
+              "color": "accent",
+              "scale": [
+                0.2,
+                0.4
+              ]
+            }
+          ]
+        },
+        {
+          "kind": "backdrop",
+          "name": "ash clouds",
+          "density": 0.1,
+          "z": -3,
+          "zOrder": -9,
+          "stride": [
+            12,
+            9
+          ],
+          "objects": [
+            {
+              "id": 130,
+              "color": "blocks",
+              "weight": 3,
+              "scale": [
+                1.4,
+                2.0
+              ]
+            },
+            {
+              "id": 129,
+              "color": "blocks",
+              "weight": 2,
+              "scale": [
+                1.2,
+                1.8
+              ]
+            },
+            {
+              "id": 3637,
+              "color": "glow",
+              "scale": [
+                2.0,
+                3.0
+              ]
+            }
+          ]
+        }
+      ],
+      "rhythm": {
+        "pulseEveryBeats": 2,
+        "fadeIn": 0,
+        "hold": 0.03,
+        "fadeOut": 0.3,
+        "brighten": 0.4,
+        "marker": {
+          "id": 1764,
+          "color": "accent",
+          "everyBeats": 2,
+          "row": 0,
+          "scale": 0.6,
+          "z": 3
+        }
+      }
+    }
+  ]
+}

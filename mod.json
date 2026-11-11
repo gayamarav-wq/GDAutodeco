@@ -1,0 +1,113 @@
+{
+	"geode": "5.10.1",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081"
+	},
+	"id": "yourname.auto_decorator",
+	"name": "Auto Decorator",
+	"version": "v1.0.0",
+	"developer": "YourName",
+	"description": "One click decorates your level layout: pick a style, tweak its colours, and fill empty space with matching decoration without touching your objects.",
+	"repository": "https://github.com/yourname/auto-decorator",
+	"tags": ["editor", "utility", "customization", "interface", "offline"],
+	"resources": {
+		"files": ["resources/presets.json"]
+	},
+	"settings": {
+		"density-scale": {
+			"type": "float",
+			"name": "Decoration density",
+			"description": "Multiplies every preset's density. 1.0 = as designed by the preset, lower = sparser, higher = denser.",
+			"default": 1.0,
+			"min": 0.25,
+			"max": 2.0,
+			"control": { "slider": true }
+		},
+		"max-new-objects": {
+			"type": "int",
+			"name": "Max objects per decoration",
+			"description": "Hard cap on how many objects one Decorate run may add (structure pieces + decoration + beat objects). The run also never goes over the level's object limit.",
+			"default": 15000,
+			"min": 100,
+			"max": 60000
+		},
+		"preview-max-objects": {
+			"type": "int",
+			"name": "Max objects in a style preview",
+			"description": "Cap for the temporary preview shown while choosing a style.",
+			"default": 1500,
+			"min": 100,
+			"max": 10000
+		},
+		"object-limit": {
+			"type": "int",
+			"name": "Editor object limit",
+			"description": "The object limit of your game version. Decorating never adds objects past this number minus the safety margin.",
+			"default": 80000,
+			"min": 1000,
+			"max": 500000
+		},
+		"object-limit-margin": {
+			"type": "int",
+			"name": "Object limit safety margin",
+			"description": "Objects to leave free below the limit, so you can keep building after decorating.",
+			"default": 500,
+			"min": 0,
+			"max": 20000
+		},
+		"max-cell-y": {
+			"type": "int",
+			"name": "Highest decorated row",
+			"description": "Highest grid row (1 row = 30 units) decoration may reach. Objects outside the editor's own bounds are skipped anyway.",
+			"default": 90,
+			"min": 14,
+			"max": 400
+		},
+		"deco-editor-layer": {
+			"type": "int",
+			"name": "Editor layer for added objects",
+			"description": "Put generated objects on this editor layer (0 = leave on the default layer). Handy for hiding or locking them while you keep building.",
+			"default": 0,
+			"min": 0,
+			"max": 999
+		},
+		"apply-background-colour": {
+			"type": "bool",
+			"name": "Apply Background colour to the level",
+			"description": "When on, the preset's Background colour also recolours the level's background channel.",
+			"default": true
+		},
+		"live-colour-preview": {
+			"type": "bool",
+			"name": "Show colours in the editor immediately",
+			"description": "Applies the palette to the editor view as soon as objects are added. Turn off if colours ever look wrong; the colour triggers still colour the level when played.",
+			"default": true
+		},
+		"random-seed": {
+			"type": "int",
+			"name": "Fixed random seed",
+			"description": "0 = results are repeatable per preset and level (undo + decorate again gives a new variation). Any other number pins the seed.",
+			"default": 0,
+			"min": 0,
+			"max": 2000000000
+		},
+		"button-offset-x": {
+			"type": "float",
+			"name": "Toolbar button offset X",
+			"description": "Nudge the Auto Deco toolbar button horizontally (takes effect next time the editor opens).",
+			"default": 0.0,
+			"min": -300.0,
+			"max": 300.0
+		},
+		"button-offset-y": {
+			"type": "float",
+			"name": "Toolbar button offset Y",
+			"description": "Nudge the Auto Deco toolbar button vertically (takes effect next time the editor opens).",
+			"default": 0.0,
+			"min": -300.0,
+			"max": 300.0
+		}
+	}
+}
